@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گالری عکس‌ها</title>
+
+    <style>
+    body {
+        font-family: sans-serif;
+        direction: rtl;
+        text-align: center;
+        padding: 30px;
+        background: #fafafa;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* دو ستون */
+        gap: 20px; /* فاصله بین عکس‌ها */
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+</style>
+<body>
+
+    <h1>گالری عکس‌های من</h1>
+
+    <div class="gallery">
+        <img src="assets/images/profile.jpg" alt="عکس 1">
+        <img src="assets/images/photo1.jpg"alt="">
+        <img src="assets/images/photo2.jpg"alt="">
+        <img src="assets/images/photo4.jpg"alt="">
+        <img src="assets/images/photo5.jpg"alt="">
+        <img src="assets/images/photo6.jpg"alt="">
+        <img src="assets/images/photo7.jpg"alt="">
+    </div>
+
+</body>
+</html>

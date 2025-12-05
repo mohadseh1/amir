@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amirsepahvand</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<footer class="footer">
+    <p> my profile </p>
+</footer>
+
+
+<body>
+
+    <!-- بخش هدر -->
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">AMIR</h2>
+            <ul class="nav-links">
+                <li><a href="#home">خانه</a></li>
+                <li><a href="#about">درباره من</a></li>
+                <li><a href="#skills">مهارت‌ها</a></li>
+                <li><a href="#projects">تجربه</a></li>
+                <li><a href="#contact">تماس</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header>
+    <nav class="navbar">
+        <h1 class="logo"> AMIR SEPAHVAND</h1>
+
+        <ul class="menu">
+            <li><a href="#services">سفر</a></li>
+            <li><a href="#about">درباره ما</a></li>
+            <li><a href="#projects">تجربه</a> </a></li>
+            <li><a href="#contact">تماس با ما</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <section class="home">
+    <div class="home-text">
+      <h1>به وب سایت من خوش آمدید </h1>
+        <p></p>
+       <a href="photos.html" class="btn">مشاهده عکس‌ها</a>
+    </div>
+
+    <div class="home-img">
+        <img src="assets/images/profile.jpg" alt="profile">
+    </div>
+</section>
+    <!-- بخش درباره من -->
+     <section id="about" class="about fade-in">
+    <h2>درباره من</h2>
+    
+    <div class="about-container">
+        <div class="about-img">
+            <img src="assets/images/profile.jpg" alt="about profile">
+        </div>
+
+        <div class="about-text">
+            <h3>من کی هستم؟</h3>
+            <p>
+                من یک مرد بسیار خوش تیپ و مهربون هستم 
+            </p>
+
+            <a href="#projects" class="btn">دیدن پروژه‌ها</a>
+        </div>
+    </div>
+</section>
+    <section id="about" class="about fade-in">
+        <h2>درباره من</h2>
+        <p></p>
+    </section>
+
+    <!-- بخش مهارت‌ها -->
+    <section id="skills" class="skills fade-in">
+        <h2>مهارت‌ها</h2>
+        <ul>
+            <li>mechanic</li>
+            <li>driving and riding</li>
+            <li>shooting</li>
+        </ul>
+    </section>
+
+    <section id="services" class="services fade-in">
+  <div class="container">
+    <h2></h2>
+
+    <div class="services-box">
+      <div class="service-card">
+        <div class="icon">🚌</div>
+        <h3></h3>
+        <p></p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🐎</div>
+        <h3></h3>
+        <p></p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">⚙️</div>
+        <h3>پشتیبانی</h3>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="about fade-in">
+    <div class="container">
+        <h2>درباره ما</h2>
+
+        <div class="about-box">
+            <img src="about.jpg" alt="About image">
+
+            <div class="about-text">
+                <h3>ما چه کاری انجام می‌دهیم؟</h3>
+                <p>
+                    ما تیمی هستیم که تا ابد با هم میمونیم
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- بخش پروژه‌ها -->
+    <section id="projects" class="projects fade-in">
+        <h2>سفرها</h2>
+        <div class="project-box">
+            <h3>گالری</h3>
+            <p>تجربیات</p>
+        </div>
+        <div class="project-box">
+            <h3>گالری</h3>
+            <p>لیست</p>
+        </div>
+    </section>
+
+    <!-- بخش تماس -->
+    <section id="contact" class="contact">
+        <h2>0937***5530</h2>
+        <p>ایمیل:www.amir.sp5530@gmail.com <www class=></www></p>
+    </section>
+
+    <script src="js/main.js"></script>
+    <section id="contact" class="contact fade-in">
+    <h2>تماس با من</h2>
+
+    <form class="contact-form">
+        <input type="text" placeholder="نام شما" required>
+        <input type="email" placeholder="ایمیل شما" required>
+        <textarea placeholder="پیام شما" required></textarea>
+
+        <button type="submit" class="btn">ارسال پیام</button>
+    </form>
+</section>
+<script>
+    const elements = document.querySelectorAll('.fade-in');
+
+    function showOnScroll() {
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                el.classList.add('show');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', showOnScroll);
+    showOnScroll();
+</script>
+</body>
+</html>
